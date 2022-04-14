@@ -6,12 +6,6 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/components/PageLayout.vue'),
     children: [
       {
-        path: 'news/:id',
-        component: () => import('@/modules/news/components/News.vue'),
-        name: 'News',
-        meta: { title: 'News' },
-      },
-      {
         path: 'posts/:id',
         component: () => import('@/modules/posts/Posts.vue'),
         name: 'Posts',

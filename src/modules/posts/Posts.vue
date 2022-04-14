@@ -1,5 +1,5 @@
 <script>
-import { defineAsyncComponent, onMounted, ref } from 'vue';
+import { defineAsyncComponent, ref } from 'vue';
 import axios from 'axios';
 import PostSkeleton from './components/PostSkeleton.vue';
 import PostError from './components/PostError.vue';
@@ -27,14 +27,6 @@ export default {
   <div v-for="post in posts" :key="post.id">
     <Post :post="post"/>
   </div>
-<!--  <Suspense>-->
-<!--    <template #default>-->
-<!--      <Post />-->
-<!--    </template>-->
-<!--    <template #fallback>-->
-<!--      <PostSkeleton />-->
-<!--    </template>-->
-<!--  </Suspense>-->
 </template>
 
 <style lang="scss">

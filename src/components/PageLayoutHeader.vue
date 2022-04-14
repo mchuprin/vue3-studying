@@ -8,15 +8,8 @@
 </template>
 
 <script lang="ts">
-// eslint-disable-next-line import/extensions
-import { number } from '@/testCounter/counter';
-
 export default {
   name: 'PageLayoutHeader',
-  setup(props: any, context: any) {
-    // const number = countingValue().number;
-    return { number };
-  },
 };
 </script>
 

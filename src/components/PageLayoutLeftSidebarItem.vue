@@ -1,13 +1,5 @@
 <script lang="ts">
-/* eslint-disable */
-import { useCountInfo } from '@/components/composables/sendCounterComposable';
-import { setCountInfo } from '@/components/composables/sendCounterComposable';
-import {
-  computed,
-  toRef,
-  toRefs,
-  watch,
-} from 'vue';
+import { useCountInfo, setCountInfo } from '@/components/composables/sendCounterComposable';
 
 export default {
   name: 'PageLayoutLeftSidebarItem',
@@ -18,7 +10,7 @@ export default {
       isMax,
       isMin,
       setCountInfo,
-  };
+    };
   },
 };
 </script>

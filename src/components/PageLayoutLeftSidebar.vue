@@ -6,28 +6,10 @@ fetch();
 
 const navItems: any = [
   {
-    to: 'News',
-    icon: 'far fa-newspaper',
-    name: 'News',
-    id: 1,
-  },
-  {
     to: 'Posts',
     icon: 'far fa-newspaper',
     name: 'Posts',
-    id: 2,
-  },
-  {
-    to: 'News',
-    icon: 'far fa-newspaper',
-    name: 'News',
-    id: 3,
-  },
-  {
-    to: 'News',
-    icon: 'far fa-newspaper',
-    name: 'News',
-    id: 4,
+    id: 1,
   },
 ];
 </script>
@@ -38,7 +20,6 @@ const navItems: any = [
       v-for="item in navItems" :item="item"
       :key="item.to"
     />
-<!--    <Icon v-for="icon in icons" :item="icon" :key="icon.id" />-->
   </div>
 </template>
 
